@@ -1,0 +1,24 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+
+# Node / TypeScript
+node_modules/
+*.tsbuildinfo
+.next/
+out/
+next-env.d.ts
+
+# Test / build artifacts
+test-results/
+playwright-report/
+.vercel
+
+# IDE
+.idea/
+.vscode/
+

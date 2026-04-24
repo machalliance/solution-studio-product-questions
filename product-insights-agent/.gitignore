@@ -1,0 +1,15 @@
+# Playwright
+test-results/
+playwright-report/
+
+# Pipeline artifacts — eval sets and reports are tracked in git
+# (eval sets = golden Q&A ground truth, eval reports = historical results)
+
+
+
+# Allow .env.example (parent gitignore catches .env.*)
+!.env.example
+.vercel
+
+# Next.js autogenerates this on every build — should never be tracked.
+next-env.d.ts

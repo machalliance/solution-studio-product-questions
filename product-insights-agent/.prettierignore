@@ -1,0 +1,5 @@
+.next
+node_modules
+pnpm-lock.yaml
+data
+public/widget/widget.js

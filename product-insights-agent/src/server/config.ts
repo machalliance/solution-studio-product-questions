@@ -1,0 +1,70 @@
+export const config = {
+  product: {
+    defaultProductId: "dreame-x40-ultra",
+  },
+  chat: {
+    maxInputLength: 2000,
+    header: "Ask anything about this product",
+    placeholder: "Type your question...",
+    introText:
+      "Get instant answers about this product from the official manual and specifications.",
+    errorMessage:
+      "Something went wrong. Please try again or start a new conversation.",
+    sendButton: "Send",
+    typingIndicator: "Thinking...",
+  },
+  escalation: {
+    supportContact:
+      "MegaBuy Customer Support at 1-800-555-0199 or support@megabuy.example",
+    message:
+      "I'd be happy to help, but this question is best handled by our customer support team who can provide personalized assistance. Please contact MegaBuy Customer Support at 1-800-555-0199 or support@megabuy.example.",
+    // Safety-incident responses must (a) acknowledge harm with empathy,
+    // (b) hand off to a human with a real contact channel, (c) not try to
+    // troubleshoot or close the thread. See product-insights-agent-1k3.
+    safetyIncidentMessage:
+      "I'm so sorry to hear that, and I hope everyone is okay. A situation like this needs immediate attention from a real person on our team — I'm not the right place to handle this. Please reach MegaBuy Customer Support right away at 1-800-555-0199 or support@megabuy.example, and they will help you directly. If anyone is in immediate danger, please contact your local emergency services first.",
+  },
+  seedQuestions: {
+    displayCount: 3,
+    // We target ≥10 validated questions. The survival rate is *inverse* to
+    // candidate count — asking for 25 forces the generator to stretch past the
+    // manual's actual coverage, which the validator correctly rejects. 15
+    // gives the generator room to produce 10+ grounded candidates without
+    // pushing it into speculative territory.
+    // See plans/seed-question-generation-quality.md.
+    totalGenerated: 15,
+    fallback: [
+      "What are the key features of this product?",
+      "How do I get started?",
+      "What maintenance is required?",
+      "What's included in the package?",
+      "What safety information should I know about?",
+    ],
+  },
+  widget: {
+    title: "Product Insights \u2728",
+    subtitle: "No research needed — get answers right away",
+    inputPlaceholder: "Ask a question...",
+    askButton: "Ask",
+    faqHeader: "Frequently Asked Questions",
+    loadingMessages: ["Retrieving...", "Analyzing...", "Answering..."],
+    disclaimerLinkText:
+      "Disclaimer: Click to read important information about use of this tool",
+    disclaimerHeader: "Important Information",
+    disclaimer: [
+      "This chatbot uses artificial intelligence to assist with general product information and support. While we work hard to ensure our responses are accurate and helpful, the information provided by the AI may not always capture every detail, specification, or compatibility consideration for your unique needs.",
+      "For expert advice tailored to your situation, we encourage you to connect with a MegaBuy product specialist before making a purchase.",
+      "Please do not enter any personal or sensitive information, such as your full name, address, payment details, or account numbers, while interacting with the chatbot.",
+      "MegaBuy cannot be held responsible for any issues that result from relying solely on chatbot responses.",
+    ],
+  },
+  pdp: {
+    addToCart: "Add to Cart",
+    buyNow: "Buy Now",
+    freeShipping: "Free Shipping",
+    inStock: "In Stock",
+    descriptionHeader: "About this product",
+    specificationsHeader: "Specifications",
+    featuresHeader: "Key Features",
+  },
+} as const;

@@ -1,0 +1,43 @@
+{
+  "id": "dreame-x40-ultra",
+  "name": "Dreame X40 Ultra Auto-Empty Robot Vacuum & Mop",
+  "brand": "Dreame",
+  "model": "X40 Ultra",
+  "price": 1899.99,
+  "currency": "CAD",
+  "description": "The Dreame X40 Ultra is a premium robot vacuum and mop combo featuring advanced navigation, powerful suction, and a fully automated self-cleaning station. It handles vacuuming and mopping simultaneously with intelligent surface detection.",
+  "features": [
+    "12,000Pa HyperForce suction power",
+    "Auto mop lifting and removal",
+    "Self-cleaning, self-emptying, self-refilling base station",
+    "3D structured light obstacle avoidance",
+    "AI-powered navigation with LiDAR",
+    "Hot water mop washing up to 70°C",
+    "Auto detergent dispensing",
+    "Edge-to-edge mopping with MopExtend RoboSwing",
+    "Multi-floor mapping support",
+    "Voice assistant compatible (Alexa, Google Home)"
+  ],
+  "specifications": {
+    "Suction Power": "12,000Pa",
+    "Battery Capacity": "6,400mAh",
+    "Run Time": "Up to 210 minutes",
+    "Dustbin Capacity": "350ml (robot) / 4L (base station)",
+    "Water Tank": "80ml (robot) / 4.5L clean + 4L dirty (base station)",
+    "Noise Level": "62-68 dB",
+    "Navigation": "LiDAR + 3D structured light",
+    "Dimensions": "350 × 350 × 104mm (robot)",
+    "Weight": "4.9kg (robot)",
+    "Charging Time": "Approximately 4 hours",
+    "Connectivity": "Wi-Fi 2.4GHz/5GHz, Bluetooth",
+    "Compatibility": "Alexa, Google Home, Dreame App"
+  },
+  "images": [
+    "/images/dreame-x40-ultra-0.jpg",
+    "/images/dreame-x40-ultra-1.jpg",
+    "/images/dreame-x40-ultra-2.jpg",
+    "/images/dreame-x40-ultra-3.jpg"
+  ],
+  "category": "Robot Vacuums",
+  "url": "https://www.bestbuy.ca/en-ca/product/dreame-x40-ultra-auto-empty-robot-vacuum-mop-black/19446187"
+}

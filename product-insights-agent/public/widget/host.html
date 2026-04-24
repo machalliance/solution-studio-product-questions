@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Insights</title>
+    <link rel="stylesheet" href="/widget/widget.css" />
+    <style>
+      html {
+        overflow-y: hidden;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-widget="product-insights"></div>
+    <script src="/widget/widget.js"></script>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var productId = params.get("productId") || "dreame-x40-ultra";
+        var clientId = params.get("clientId") || undefined;
+        var secret = params.get("secret") || undefined;
+        window.ProductInsightsWidget.init({
+          productId: productId,
+          clientId: clientId,
+          secret: secret,
+          apiBase: "",
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-atlas-local:8.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGODB_INITDB_DATABASE=product-insights
+
+volumes:
+  mongodb_data:
